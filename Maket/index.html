@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <title>Pizza</title>
+</head>
+
+<body class="bg-warning text-white">
+    
+    <main class="site-main">
+        <section class="hero">
+            <div class="hero__container container">
+                <div class="hero__inner">
+                    <h1 class="hero__title fs-3 text-center mb-5">Pizza buyurtma qilish</h1>
+                    <div class="row flex-column flex-sm-row border p-5">
+                        <div class="hero__left-content col col-4">
+                            <form class="hero__form form" action="https://echo.htmlacademy.ru/" method="POST" autocomplete="off"
+                            id="form-btn">
+                            <div class="form__select-content mb-5">
+                                <label class="fw-bold mb-2" for="pizza__select">Noni qanday bulsin</label>
+                                <select class="form__select form-select w-50" aria-label="Default select example"
+                                id="hero__select" name="user_choose">
+                                <option  value="Tanlanmagan" hidden selected >Tanlang</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form__input-radio mb-5">
+                            <h2 class="fs-6">Kattaligi</h2>
+                        </div>
+                        <div class="form__input-check-on mb-5">
+                            <h2 class="fs-6">Ustiga nima solaylik?</h2>
+                        </div>
+                        
+                        <div class="form__input-check-extra">
+                            <h2 class="fs-6">Qo`shimchalar</h2>
+                        </div>
+                        
+                    </div>
+                </form>
+                
+                <div
+                class="hero__right-content col col-2 ps-0 ps-sm-4 mt-5 mt-sm-0 border border-dark border-top-0 border-bottom-0 border-end-0">
+                <p class="fw-bold">Non: <span class="info__pizza-bread text-success"></span></p>
+                
+                <p class="fw-bold">Kattaligi: <span class="info__pizza-size text-success"></span></p>
+                
+                <p class="fw-bold">Ustiga: <span class="info__pizza-on-food text-success"></span></p>
+                <ul class="pizza__top-list"></ul>
+                
+                <p class="fw-bold">Q`shimcha: <span class="info__pizza-on-extra text-success"></span></p>
+                <ul class="pizza-more-list"></ul>
+                
+                <button class="hero__btn btn btn-danger mt-5" form="form-btn" type="submit">Buyurtma berish</button>
+                
+            </div>
+        </div>
+        
+        
+    </div>
+</div>
+</section>
+</main>
+
+<script src="./js/script.js"></script>
+</body>
+
+</html>
